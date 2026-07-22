@@ -1445,7 +1445,6 @@ module.exports = class VaultAgentPlugin extends Plugin {
   onunload() {
     this.mobileFab?.remove();
     this.mobileFab = null;
-    this.app.workspace.detachLeavesOfType(VIEW_TYPE);
   }
 
   async loadSettings() {
